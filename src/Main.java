@@ -2,10 +2,18 @@ public class Main {
     public static void main(String[] args) {
 
         BonusMilesService service = new BonusMilesService();
-        int price = 10_000;
-        int miles = service.calculate(price); // должно получиться 500
 
+        System.out.println();
+        System.out.println("25000");
+        System.out.println(service.calculate(25000));
 
-        System.out.println(miles);
+        System.out.println();
+        System.out.println("5265");
+        System.out.println(service.calculate(5265));
+
+        System.out.println();
+        System.out.println("100980");
+        System.out.println(service.calculate(100980));
+
     }
 }
